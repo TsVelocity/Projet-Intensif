@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Les témoignages</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./styles/accueil.css"/>
+      <link rel="stylesheet" href="./styles/footer.css"/>
+      <script src="./javascript/include.js"></script>
+      <script src="./javascript/jquery.js"></script>
+    </head>
+    <header>
+      <div id="header"></div>
+    </header>
+    <body>
+        
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+              <img src="./images/a1.jpg" style="width:50%">
+              <div class="text">Je suis Maxime Ngolo, je trouve que le personnel est très souriant, très sympathique, boutique recommandable</div>
+          </div>
+      
+          <div class="mySlides fade">
+              <img src="./images/a2.jpg" style="width:50%">
+              <div class="text">Moi, Zoe Mouror, je trouve que le personnel est très charmant, il y a des produits frais, fait sous mes yeux !</div>
+          </div>
+      
+          <div class="mySlides fade">
+              <img src="./images/a3.jpg" style="width:30%">
+              <div class="text">Je suis Maxens Morue, je viens dans cette patisseries toutes les semaines, cette boutque ne m'a jamais déçu !</div>
+          </div>
+
+          <div class="mySlides fade">
+              <img src="./images/a4.jpg" style="width:50%">
+              <div class="text">Moi, Marie Silvia, je trouve que cette pattiserie propose des services que l'on ne trouve nulle part ailleurs, produit très originaux !</div>
+          </div>
+      
+      </div>
+      
+      <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+    <footer>
+        <div id="footer"></div> 
+    </footer>
+</html>

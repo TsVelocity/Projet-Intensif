@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Chocolatier</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./styles/accueil.css"/>
+      <link rel="stylesheet" href="./styles/footer.css"/>
+      <script src="./javascript/include.js"></script>
+      <script src="./javascript/jquery.js"></script>
+    </head>
+    <header>
+      <div id="header"></div>
+    </header>
+    <body>
+      
+      <h4>
+          <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                  <img src="./images/g1.jpg" style="width:50%">
+                  <div class="text">Gâteau au chocolat 1</div>
+              </div>
+          
+              <div class="mySlides fade">
+                  <img src="./images/g2.jpg" style="width:50%">
+                    <div class="text">Gâteau au chocolat 2</div>
+              </div>
+          
+              <div class="mySlides fade">
+                  <img src="./images/g7.jpg" style="width:50%">
+                  <div class="text">Gâteau au chocolat 3</div>
+              </div>
+
+              <div class="mySlides fade">
+                  <img src="./images/g4.jpg" style="width:50%">
+                  <div class="text">Gâteau au chocolat 4</div>
+              </div>
+          
+          </div>
+          
+          <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+          </div>
+          <br>
+          <br>
+          <div class="center">Notre sociétée, fondée en 1970, est experte dans le monde culinaire, elle est spécialisée dans le domaine du chocolat, fournisseur de la meilleure école d'ingénieur qui existe en France : l'ENSICAEN.
+              
+          </div>
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+        </script>
+
+        <br>
+        <br>
+        <div id="slider">
+            <ul>
+            <li>
+                <div class="slider-container">
+                <p>Le projet de loi prévoyant de transformer le pass sanitaire en pass vaccinal a été adopté en première lecture à l’Assemblée nationale. Il va maintenant falloir patienter jusqu’au lundi 10 janvier.</p>
+                </div>
+            </li>
+            
+            
+                <li>
+                <div class="slider-container">
+                <p>Dans la nuit de mercredi à jeudi au Kazakhstan, plusieurs dizaines de manifestants et 13 policiers ont été tués par la polie à Almaty, capitale économique du pays.</p>
+            </div>
+            </li>
+                <li>
+                <div class="slider-container">
+                <p>À Toulouse (Haute-Garonne), les éboueurs ont maintenu leur grève débutée le 22 novembre 2021. Jeudi, plusieurs dépôts ont commencé à être bloqués, au lendemain d’un échec de négociations avec la direction. </p>
+            </div>
+            </li>
+                <li>
+                <div class="slider-container">
+                <p>L’annonce peut faire frémir car impliquant le maintien jusqu’à tout récemment d’une tradition sociétale discutable. Jeudi aux Philippines est ainsi entrée en vigueur une loi interdisant le mariage d’enfants. </p>
+            </div>
+            </li>
+            <li>
+                <div class="slider-container">
+                <p>Les autorités italiennes viennent de rendre obligatoire la vaccination contre la Covid-19 pour les personnes de plus de 50 ans. </p>
+            </div>
+            </li>
+            <li>
+                <div class="slider-container">
+                <p>La CNIL a émis un avis semblable à son homologue britannique (l’ICO) au sujet des solutions de ciblage alternatives aux cookies basées sur des identifiants.</p>
+            </div>
+            </li>
+            </ul>
+        </div>
+      
+      </h4>
+      <div id="footer"></div> 
+    
+    </body>
+
+</html>

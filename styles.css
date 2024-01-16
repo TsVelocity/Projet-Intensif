@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf7ec; /* Vert doux pour évoquer la nature */
+    color: #333;
+}
+
+header, nav, footer {
+    background: linear-gradient(to right, #86bb85, #5cb85c); /* Dégradé de verts apaisants */
+    color: #fff;
+    border-radius: 20px; /* Coins arrondis pour une touche organique */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Ombre légère pour la profondeur */
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+nav {
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #4cae4c; /* Variation de vert au survol */
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Légère ombre pour la profondeur */
+}
+
+h1, h2 {
+    color: #5cb85c; /* Vert accentué pour les titres */
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #86bb85, #5
